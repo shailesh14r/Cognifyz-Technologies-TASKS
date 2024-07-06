@@ -3,11 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .heading{
+            margin-top: 1.5rem;
+            height: auto;
+            width: 100%;
+            background-color: rgb(84, 133, 165);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .functions{
+            margin-top: 2rem;
+            height: auto;
+            width: 100%;
+            background-color: rgb(81, 43, 117);
+            color: white;
+            padding: 3rem;
+        }
+        .content1{
+            text-align: center;
+        }
+        .color_changing p{
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        .time p{
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        .clicker1, .clicker2{
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            height: 50px;
+            width: 100px;
+            font-size: large;
+            box-shadow: 3px 3px 2px gray;
+        }
+        #sec{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+            background-color: rgb(52, 173, 123);
+            font-family: "Courier New", Courier, monospace;
+            text-align: center;
+        }
+        .Result{
+            text-align: center;
+            width: 100%;
+            height: 80px;
+            background-color: rgb(58, 58, 109);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .clicker{
+            height: 50px;
+            width: 200px;
+            font-size: large;
+            font-weight: bold;
+            background-color: rgb(156, 148, 35);
+            border-radius: 1.1rem;
+            box-shadow: 4px 3px 2px rgb(128, 170, 128);
+        }
+        .calculator input{
+            height: 30px;
+            width: 200px;
+        }
+    </style>
 </head>
-<body>
 
-    <p>This is my first para</p>
-    
+<body>
+    <div class="heading">
+        <h1>Level 1</h1>
+        <h2>Task 2</h2>
+    </div>
+
+    <div class="functions">
+        <div class="content1">
+            <div class="color_changing">
+                <p>The Button for Color Change</p>
+                <button class="clicker1">Click me</button>
+            </div>
+        
+            <div class="time">
+                <p>The Button for alert with Current Time</p>
+                <button class="clicker2">Alert me</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="sec">
+        <form class="calculator">
+            <p>ADDITION</p><br>
+            <label for="first_number">First Number</label>
+            <input type="number" id="first_number"><br><br>
+            <label for="second_number">Second Number</label>
+            <input type="number" id="second_number"><br><br>
+            <input type="submit" class="clicker">
+        </form>
+    </section>
+
+    <div class="Result">
+        <p>Result =  </p>
+    </div>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
