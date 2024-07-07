@@ -21,7 +21,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   let num1 = Number(form[0].value);
   let num2 = Number(form[1].value);
-  let sum = num1 + num2;
-  console.log(sum);
-  result_value.append(sum);
+  let mul = num1 * num2;
+  console.log(mul);
+  result_value.append(mul);
 });
